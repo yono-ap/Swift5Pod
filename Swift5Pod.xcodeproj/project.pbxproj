@@ -109,7 +109,6 @@
 				DE0271B02B9EC0E8CF35AD82 /* Pods-Swift5PodUITests.debug.xcconfig */,
 				31CF4563B2D5E08639DBA597 /* Pods-Swift5PodUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -579,7 +578,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yono-ap.Swift5Pod";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -597,7 +596,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yono-ap.Swift5Pod";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
