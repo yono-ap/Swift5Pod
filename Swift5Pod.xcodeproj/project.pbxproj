@@ -20,6 +20,10 @@
 		97AB680F22597AAF00A605CD /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AB680E22597AAF00A605CD /* String+Localized.swift */; };
 		97AB681122597AE100A605CD /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AB681022597AE100A605CD /* UIViewController+Alert.swift */; };
 		97AB681322597B2000A605CD /* UIViewController+ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AB681222597B2000A605CD /* UIViewController+ErrorHandler.swift */; };
+		97AB68182259809300A605CD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AB68162259809300A605CD /* HomeViewController.swift */; };
+		97AB68192259809300A605CD /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97AB68172259809300A605CD /* HomeViewController.xib */; };
+		97AB681C225985D400A605CD /* AppCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AB681A225985D400A605CD /* AppCenterViewController.swift */; };
+		97AB681D225985D400A605CD /* AppCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97AB681B225985D400A605CD /* AppCenterViewController.xib */; };
 		C2D0013886F2BB491EC84F15 /* Pods_Swift5PodTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B81D11DB84A4A87008D9A5C /* Pods_Swift5PodTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +69,10 @@
 		97AB680E22597AAF00A605CD /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		97AB681022597AE100A605CD /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		97AB681222597B2000A605CD /* UIViewController+ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ErrorHandler.swift"; sourceTree = "<group>"; };
+		97AB68162259809300A605CD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		97AB68172259809300A605CD /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		97AB681A225985D400A605CD /* AppCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCenterViewController.swift; sourceTree = "<group>"; };
+		97AB681B225985D400A605CD /* AppCenterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppCenterViewController.xib; sourceTree = "<group>"; };
 		9B81D11DB84A4A87008D9A5C /* Pods_Swift5PodTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift5PodTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE0271B02B9EC0E8CF35AD82 /* Pods-Swift5PodUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift5PodUITests.debug.xcconfig"; path = "Target Support Files/Pods-Swift5PodUITests/Pods-Swift5PodUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				97AB680B2259799000A605CD /* Extensions */,
+				97AB68152259805300A605CD /* Pages */,
 				9762BBC92258B9290011BDD1 /* AppDelegate.swift */,
 				9762BBCB2258B9290011BDD1 /* ViewController.swift */,
 				9762BBCD2258B9290011BDD1 /* Main.storyboard */,
@@ -183,6 +192,17 @@
 				97AB681222597B2000A605CD /* UIViewController+ErrorHandler.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		97AB68152259805300A605CD /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				97AB68162259809300A605CD /* HomeViewController.swift */,
+				97AB68172259809300A605CD /* HomeViewController.xib */,
+				97AB681A225985D400A605CD /* AppCenterViewController.swift */,
+				97AB681B225985D400A605CD /* AppCenterViewController.xib */,
+			);
+			path = Pages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +317,8 @@
 				9762BBD42258B92A0011BDD1 /* LaunchScreen.storyboard in Resources */,
 				9762BBD12258B92A0011BDD1 /* Assets.xcassets in Resources */,
 				9762BBCF2258B9290011BDD1 /* Main.storyboard in Resources */,
+				97AB681D225985D400A605CD /* AppCenterViewController.xib in Resources */,
+				97AB68192259809300A605CD /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,10 +454,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				97AB681122597AE100A605CD /* UIViewController+Alert.swift in Sources */,
+				97AB681C225985D400A605CD /* AppCenterViewController.swift in Sources */,
 				9762BBCC2258B9290011BDD1 /* ViewController.swift in Sources */,
 				9762BBCA2258B9290011BDD1 /* AppDelegate.swift in Sources */,
 				97AB680F22597AAF00A605CD /* String+Localized.swift in Sources */,
 				97AB681322597B2000A605CD /* UIViewController+ErrorHandler.swift in Sources */,
+				97AB68182259809300A605CD /* HomeViewController.swift in Sources */,
 				97AB680D225979A600A605CD /* NSObject+AppLog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

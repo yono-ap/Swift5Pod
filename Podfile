@@ -7,6 +7,7 @@ target 'Swift5Pod' do
 
   # Pods for Swift5Pod
   pod 'RealmSwift'
+  pod 'AppCenter'
 
   target 'Swift5PodTests' do
     inherit! :search_paths
