@@ -14,6 +14,8 @@ class RealmTableViewController: UIViewController {
     var notificationToken: NotificationToken?
     var items: Results<RepositoryObject>?
 
+    let dateFormatter = DateFormatter()
+
     @IBOutlet weak var labelDescription: UILabel!
     @IBOutlet weak var textFieldUrl: UITextField!
     @IBOutlet weak var tableView: UITableView!
@@ -69,6 +71,8 @@ class RealmTableViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         appTrace()
+        dateFormatter.timeStyle = .full
+        dateFormatter.dateStyle = .full
         labelDescription.text = "Realm Object.".localized
         textFieldUrl.text = "https://api.github.com/users/yono-ap/repos"
 
@@ -148,7 +152,7 @@ extension RealmTableViewController: UITableViewDataSource {
         }
 
         cell.textLabel?.text = items[indexPath.row].repositoryName
-        cell.detailTextLabel?.text = items[indexPath.row].updatedAt.description
+        cell.detailTextLabel?.text = dateFormatter.string(from: items[indexPath.row].updatedAt)
         return cell
     }
 
