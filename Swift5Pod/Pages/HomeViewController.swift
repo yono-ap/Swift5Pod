@@ -36,7 +36,7 @@ class HomeViewController: UIViewController {
             CellItem(title: "Analytics data", name: "Swift5Pod.AppCenterViewController")
             ]),
         SectionItem(title: "Realm".localized, cellItems: [
-            CellItem(title: "Button", name: "v21"),
+            CellItem(title: "Repository Table", name: "Swift5Pod.RealmTableViewController"),
             CellItem(title: "Entry", name: "v22")
             ])
     ]

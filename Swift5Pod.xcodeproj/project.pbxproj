@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		5C5F36B26A059C137A5929F1 /* Pods_Swift5PodUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C6C3C053C55F812FA83596 /* Pods_Swift5PodUITests.framework */; };
 		629E415D79F84A3D0CA25932 /* Pods_Swift5Pod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FB3362F1B55C10E490064C /* Pods_Swift5Pod.framework */; };
+		9760C0E72261D46F000BBC4C /* RealmTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9760C0E52261D46F000BBC4C /* RealmTableViewController.swift */; };
+		9760C0E82261D46F000BBC4C /* RealmTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9760C0E62261D46F000BBC4C /* RealmTableViewController.xib */; };
+		9760C0EB2261D6B2000BBC4C /* RepositoryObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9760C0EA2261D6B2000BBC4C /* RepositoryObject.swift */; };
+		9760C0EE2261E8B7000BBC4C /* ApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9760C0ED2261E8B7000BBC4C /* ApiRepository.swift */; };
+		9760C0F02261E8F3000BBC4C /* ServerApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9760C0EF2261E8F3000BBC4C /* ServerApi.swift */; };
 		9762BBCA2258B9290011BDD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9762BBC92258B9290011BDD1 /* AppDelegate.swift */; };
 		9762BBCC2258B9290011BDD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9762BBCB2258B9290011BDD1 /* ViewController.swift */; };
 		9762BBCF2258B9290011BDD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9762BBCD2258B9290011BDD1 /* Main.storyboard */; };
@@ -52,6 +57,11 @@
 		73B5362EBAE35EF130276BEE /* Pods-Swift5PodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift5PodTests.release.xcconfig"; path = "Target Support Files/Pods-Swift5PodTests/Pods-Swift5PodTests.release.xcconfig"; sourceTree = "<group>"; };
 		79C6C3C053C55F812FA83596 /* Pods_Swift5PodUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift5PodUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95FB3362F1B55C10E490064C /* Pods_Swift5Pod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift5Pod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9760C0E52261D46F000BBC4C /* RealmTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTableViewController.swift; sourceTree = "<group>"; };
+		9760C0E62261D46F000BBC4C /* RealmTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RealmTableViewController.xib; sourceTree = "<group>"; };
+		9760C0EA2261D6B2000BBC4C /* RepositoryObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryObject.swift; sourceTree = "<group>"; };
+		9760C0ED2261E8B7000BBC4C /* ApiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRepository.swift; sourceTree = "<group>"; };
+		9760C0EF2261E8F3000BBC4C /* ServerApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerApi.swift; sourceTree = "<group>"; };
 		9762BBC62258B9290011BDD1 /* Swift5Pod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift5Pod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9762BBC92258B9290011BDD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9762BBCB2258B9290011BDD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +138,23 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9760C0E92261D4E0000BBC4C /* RealmObjects */ = {
+			isa = PBXGroup;
+			children = (
+				9760C0EA2261D6B2000BBC4C /* RepositoryObject.swift */,
+			);
+			path = RealmObjects;
+			sourceTree = "<group>";
+		};
+		9760C0EC2261E8A6000BBC4C /* Apis */ = {
+			isa = PBXGroup;
+			children = (
+				9760C0ED2261E8B7000BBC4C /* ApiRepository.swift */,
+				9760C0EF2261E8F3000BBC4C /* ServerApi.swift */,
+			);
+			path = Apis;
+			sourceTree = "<group>";
+		};
 		9762BBBD2258B9290011BDD1 = {
 			isa = PBXGroup;
 			children = (
@@ -153,8 +180,10 @@
 		9762BBC82258B9290011BDD1 /* Swift5Pod */ = {
 			isa = PBXGroup;
 			children = (
+				9760C0EC2261E8A6000BBC4C /* Apis */,
 				97AB680B2259799000A605CD /* Extensions */,
 				97AB68152259805300A605CD /* Pages */,
+				9760C0E92261D4E0000BBC4C /* RealmObjects */,
 				9762BBC92258B9290011BDD1 /* AppDelegate.swift */,
 				9762BBCB2258B9290011BDD1 /* ViewController.swift */,
 				9762BBCD2258B9290011BDD1 /* Main.storyboard */,
@@ -201,6 +230,8 @@
 				97AB68172259809300A605CD /* HomeViewController.xib */,
 				97AB681A225985D400A605CD /* AppCenterViewController.swift */,
 				97AB681B225985D400A605CD /* AppCenterViewController.xib */,
+				9760C0E52261D46F000BBC4C /* RealmTableViewController.swift */,
+				9760C0E62261D46F000BBC4C /* RealmTableViewController.xib */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -315,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9762BBD42258B92A0011BDD1 /* LaunchScreen.storyboard in Resources */,
+				9760C0E82261D46F000BBC4C /* RealmTableViewController.xib in Resources */,
 				9762BBD12258B92A0011BDD1 /* Assets.xcassets in Resources */,
 				9762BBCF2258B9290011BDD1 /* Main.storyboard in Resources */,
 				97AB681D225985D400A605CD /* AppCenterViewController.xib in Resources */,
@@ -453,11 +485,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9760C0EE2261E8B7000BBC4C /* ApiRepository.swift in Sources */,
 				97AB681122597AE100A605CD /* UIViewController+Alert.swift in Sources */,
 				97AB681C225985D400A605CD /* AppCenterViewController.swift in Sources */,
+				9760C0F02261E8F3000BBC4C /* ServerApi.swift in Sources */,
 				9762BBCC2258B9290011BDD1 /* ViewController.swift in Sources */,
 				9762BBCA2258B9290011BDD1 /* AppDelegate.swift in Sources */,
 				97AB680F22597AAF00A605CD /* String+Localized.swift in Sources */,
+				9760C0E72261D46F000BBC4C /* RealmTableViewController.swift in Sources */,
+				9760C0EB2261D6B2000BBC4C /* RepositoryObject.swift in Sources */,
 				97AB681322597B2000A605CD /* UIViewController+ErrorHandler.swift in Sources */,
 				97AB68182259809300A605CD /* HomeViewController.swift in Sources */,
 				97AB680D225979A600A605CD /* NSObject+AppLog.swift in Sources */,
